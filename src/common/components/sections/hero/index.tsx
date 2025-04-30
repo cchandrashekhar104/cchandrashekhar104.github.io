@@ -36,7 +36,7 @@ export default function Hero() {
           loop
           className="absolute -z-10 h-screen w-screen object-cover"
         >
-          <source src="/layout.mp4" />
+          <source src="/Myvideo.mp4" />
         </video>
         <div className="container flex flex-col items-start justify-center tracking-wide text-black dark:text-white">
           <div className="container relative flex h-full w-full flex-col items-center">
@@ -49,7 +49,7 @@ export default function Hero() {
                 Hey!
               </motion.span>
               <br />
-              <TextAnimation delay={1} baseText={`I'm Maksym`} />
+              <TextAnimation delay={1} baseText={`I'm Chandrashekhar`} />
             </div>
             <motion.div
               className="w-92 flex flex-col items-center justify-center gap-3 px-4 text-sm font-medium md:mt-12 md:flex-row lg:text-lg"
@@ -72,30 +72,35 @@ export default function Hero() {
 
               <a
                 className="borderBlack group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-black outline-none transition hover:bg-gray-100 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:w-auto"
-                href="/CV_Azimov_Maksym.pdf"
+                href="/Chandrashekhar_Choudhary.pdf"
                 download
               >
-                <span>Download CV</span>
+                <span>Resume</span>
               </a>
 
               <div className="flex gap-2">
                 <a
                   className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-black transition hover:bg-gray-100 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
-                  href="https://www.linkedin.com/in/maksym-azimov/"
+                  href="https://www.linkedin.com/in/chandrashekharchoudhary/"
                   target="_blank"
                 >
-                  <Linkedin />
+                <Image
+                    width={25}
+                    height={25}
+                    src={"/svgs/linkedin-original.svg"}
+                    alt="Linkedin icon"
+                  />
                 </a>
                 <a
                   className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-gray-700 transition hover:bg-gray-100 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
-                  href="https://github.com/bbyc4kes"
+                  href="https://scholar.google.com/citations?user=VpVcLt0AAAAJ&hl=en"
                   target="_blank"
                 >
                   <Image
                     width={25}
                     height={25}
-                    src={"/svgs/github.svg"}
-                    alt="github icon"
+                    src={"/svgs/google-scholar.svg"}
+                    alt="google scholar icon"
                   />
                 </a>
               </div>

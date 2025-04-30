@@ -1,7 +1,7 @@
 'use client';
 
 import { useSectionInView } from '@/common/lib/hooks';
-import portfolioImg from '@/../public/images/photo.jpg';
+import portfolioImg from '@/../public/images/Myimage.jpg';
 import { smoothScrollTo } from '@/common/lib/utils';
 import SectionDivider from '@/common/components/shared/section-divider';
 import SectionHeading from '@/common/components/shared/section-heading';
@@ -46,13 +46,17 @@ export default function About() {
             <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary lg:absolute lg:right-0 lg:top-[27%] lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
               <div className="flex h-full flex-col justify-center gap-6">
                 <span>
-                  I&apos;m Front-end developer with expertise in TypeScript,
-                  React & Next.js. Proven ability to deliver user-centered web
-                  applications with a focus on intuitive experiences and user
-                  interaction.
+                  Hi, I'm Chandrashekhar! 
+                  I'm an engineer and researcher passionate about creating smart, miniaturized systems — from 
+                  sensors and MEMS devices to advanced prototypes. I'm fascinated by how things are designed 
+                  and built, from microfabrication and precision engineering to scaling ideas into real-world 
+                  solutions. Whether it’s modeling in COMSOL, designing in CAD, or optimizing sensor performance
+                  , I love solving problems and pushing technology forward. I'm always curious, always learning,
+                   and always excited to take on new challenges. Outside the lab, you’ll find me exploring new 
+                   places, diving into tech trends, or planning my next hands-on project.
                 </span>
                 <span>
-                  Seeking for Web Development opportunities where I can leverage
+                  Seeking for embedded systems/sensor design opportunities where I can leverage
                   my skills to create meaningful connections between products
                   and users.
                 </span>
@@ -72,9 +76,8 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="absolute z-30 hidden lg:left-0 lg:top-1/4 lg:block">
+            <div className="absolute z-30 lg:left-0 lg:top-1/4 lg:block">
               <div className="relative h-72 w-72 lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]">
-                <div className="absolute inset-0 z-20 rounded-full bg-gradient-to-b from-[#ffcbb4] via-[#e0afa0] to-[#e29578] transition-opacity group-hover:opacity-30" />
                 <div className="absolute inset-0">
                   <Image
                     src={portfolioImg}
