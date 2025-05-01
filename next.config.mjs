@@ -5,9 +5,13 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'images.unsplash.com',
+
       },
     ],
+    unoptimized: true,
   },
+  basePath: '',
+  assetPrefix: '', 
   compiler: {
     styledComponents: true,
   },
@@ -38,6 +42,7 @@ const nextConfig = {
     });
     return config;
 	},
+  output: 'export',
 }
 
 export default nextConfig

@@ -290,6 +290,7 @@ export const projectsData = [
      
       `I meticulously documented the fabrication steps and testing procedures to ensure repeatability of the process and to support iterative improvements in the sensor design. This data is invaluable for refining the sensor’s performance and ensuring reliability in future iterations.`,
     ],
+    extraImg:[]
   },
   {
     title: 'Controlling Projector using Raspberry Pi',
