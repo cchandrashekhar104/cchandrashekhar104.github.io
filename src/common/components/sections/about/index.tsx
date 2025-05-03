@@ -43,7 +43,7 @@ export default function About() {
           }}
         >
           <div className="antialiased group relative w-full">
-            <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary lg:absolute lg:right-0 lg:top-[27%] lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
+            <div className="text-md relative z-40 flex flex-col gap-3 font-normal tracking-wide text-primary lg:absolute lg:right-0 lg:top-[27%] lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
               <div className="flex h-full flex-col justify-center gap-6">
                 <span>
                   Hi, I'm Chandrashekhar! 
@@ -55,13 +55,9 @@ export default function About() {
                    and always excited to take on new challenges. Outside the lab, you’ll find me exploring new 
                    places, diving into tech trends, or planning my next hands-on project.
                 </span>
-                <span>
-                  Seeking for embedded systems/sensor design opportunities where I can leverage
-                  my skills to create meaningful connections between products
-                  and users.
-                </span>
+
                 <p className="flex flex-col items-start sm:items-center lg:items-start">
-                  <span>So if you are interested,</span>
+                  <span>Hit me up and let’s build something incredible together! Cheers!</span>
                   <Link
                     href={'contact'}
                     onClick={(e) => {

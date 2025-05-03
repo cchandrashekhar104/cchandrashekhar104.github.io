@@ -11,6 +11,23 @@ import auditMasterImg from '@/../public/images/audit-master.png';
 import accountingImg from '@/../public/images/accounting.jpg';
 import smartHelmetCover from '@/../public/images/smart_helmet_project/cover.jpg';
 import smartHelmet1 from '@/../public/images/smart_helmet_project/3.jpg';
+import coronaProject from '@/../public/images/corona_discharge_project/Figure_1.jpg';
+import coronaProject1 from '@/../public/images/corona_discharge_project/Figure_5.jpg';
+import rtpepsProject from '@/../public/images/RTPEPS/cover.jpg';
+import waterpipeProject from '@/../public/images/Waterpipe/Fig1.jpg';
+import calorimetricProject from '@/../public/images/Calorimetric/Fig1.jpg';
+import drumsProject from '@/../public/images/Drums/cover.jpg';
+import saviProject from '@/../public/images/SAVI/cover.jpg';
+import virtualBowlingProject from '@/../public/images/Virtual_bowling/cover.jpg';
+import vetebralVestProject from '@/../public/images/Vertebral_vest/cover.jpg';
+import pjiProject from '@/../public/images/PJI/kneepain.jpg';
+import pressureSensorProject from '@/../public/images/Pressure_sensor/wafer.png';
+import pressureSensorProject1 from '@/../public/images/Pressure_sensor/wafer2.png';
+import deviceDriverProject from '@/../public/images/Device_driver/Cover.jpg';
+import rtaiProject from '@/../public/images/RTAI/cover.png';
+import cliponProject from '@/../public/images/Clip_on_touchscreen/cover.png';
+import hardwareSimulatorProject from '@/../public/images/Hardware_simulator/cover.jpg';
+
 import IRLogo from '@/../public/svgs/ingersoll-rand.svg';
 import { BookIcon, BriefcaseBusinessIcon } from 'lucide-react';
 
@@ -174,19 +191,15 @@ export const projectsData = [
     title: 'High-Efficiency Nanoparticle Charger',
     description: `Designed a compact unipolar corona-based charger to enhance detection efficiency in miniaturized airborne nanoparticle monitoring systems.`,
     tags: ['COMSOL Multiphysics', 'Electrostatics', 'Microfluidics', 'Nanoparticle Detection', 'Sensor Design'],
-    imageUrl: accountingImg,
+    imageUrl: coronaProject,
     link: '',
     detailedDescription: [
-      `This project focused on developing a miniature unipolar corona-based charger to improve the charge transfer efficiency of airborne nanoparticles for real-time sensing applications. The goal was to enable high-sensitivity detection in portable air quality monitoring systems by maximizing the number of charged particles reaching the downstream sensor.`,
+      `This project focused on developing a miniature unipolar corona-based charger to improve the charge transfer efficiency of airborne nanoparticles for real-time sensing applications. The goal was to enable high-sensitivity detection in portable air quality monitoring systems by maximizing the number of charged particles reaching the downstream sensor. The charger generates ions using a sharp electrode under high voltage. As air flows through the device, these ions attach to neutral nanoparticles suspended in the airstream. I simulated the device using COMSOL Multiphysics to model the electric field distribution, airflow patterns, ion diffusion, and particle trajectories. These simulations helped me understand how particle charging and losses occur inside the system.`,
       
-      `The charger generates ions using a sharp electrode under high voltage. As air flows through the device, these ions attach to neutral nanoparticles suspended in the airstream. I simulated the device using COMSOL Multiphysics to model the electric field distribution, airflow patterns, ion diffusion, and particle trajectories. These simulations helped me understand how particle charging and losses occur inside the system.`,
-      
-      `By iteratively adjusting the geometry of the electrodes and flow channel, I minimized particle losses caused by diffusion and electrostatic forces. I also evaluated how changes in input parameters—such as applied voltage and flow rate—affect charging efficiency and particle transmission. The final design showed strong potential for integration into compact and efficient airborne nanoparticle detection platforms.`,
-      
-      `This charger plays a key role in next-generation aerosol instrumentation, particularly for applications requiring miniaturized and low-flow operation. It supports improved detection accuracy and energy efficiency in systems designed for environmental monitoring, workplace safety, and health research.`,
+      `By iteratively adjusting the geometry of the electrodes and flow channel, I minimized particle losses caused by diffusion and electrostatic forces. I also evaluated how changes in input parameters—such as applied voltage and flow rate—affect charging efficiency and particle transmission. The final design showed strong potential for integration into compact and efficient airborne nanoparticle detection platforms. This charger plays a key role in next-generation aerosol instrumentation, particularly for applications requiring miniaturized and low-flow operation. It supports improved detection accuracy and energy efficiency in systems designed for environmental monitoring, workplace safety, and health research.`,
 
     ],
-    extraImg: [accountingImg, accountingImg],
+    extraImg: [coronaProject, coronaProject1],
   },
   
   {
@@ -210,24 +223,24 @@ export const projectsData = [
     title: 'Real-Time Particle Exposure Protection System',
     description: `Developed a real-time wearable system to monitor and respond to airborne particle exposure, aimed at improving safety in occupational and high-risk environments.`,
     tags: ['Embedded Systems', 'Sensor Integration', 'Real-time Monitoring', 'Air Quality', 'Wearable Tech'],
-    imageUrl: accountingImg, // Replace with your actual image reference
+    imageUrl: rtpepsProject, // Replace with your actual image reference
     link: '', // Add GitHub or documentation link if available
     detailedDescription: [
-      `This project focused on creating a wearable system that continuously monitors airborne particle concentration in real-time to protect individuals working in environments with high exposure risks, such as industrial plants, construction sites, and laboratories. The system aims to provide immediate feedback and alerts when exposure exceeds safe thresholds.`,
+      `This project focused on creating a wearable system that continuously monitors airborne particle concentration in real-time to protect individuals working in environments with high exposure risks, such as industrial plants, construction sites, and laboratories. The system aims to provide immediate feedback `,
   
-      `The device incorporates a compact, low-power particle sensor capable of detecting fine particulate matter (e.g., PM2.5 and PM10), coupled with a microcontroller that processes sensor data and performs threshold-based analysis. The embedded firmware, developed in C/C++, enables real-time sampling, filtering, and comparison against predefined safety limits.`,
+      `and alerts when exposure exceeds safe thresholds. The device incorporates a compact, low-power particle sensor capable of detecting fine particulate matter (e.g., PM2.5 and PM10), coupled with a microcontroller that processes sensor data and performs threshold-based analysis. The embedded firmware, developed in C/C++, enables real-time sampling, filtering, and comparison against predefined safety limits.`,
   
       `When the particle concentration crosses critical exposure levels, the system activates both local alerts (via buzzers and LEDs) and remote alerts through wireless modules, allowing supervisory personnel or healthcare systems to be notified instantly. The data can be logged for later review and trend analysis.`,
   
       `This real-time protection system enhances workplace safety by enabling early response to poor air quality conditions, potentially preventing long-term respiratory or cardiovascular issues caused by chronic exposure. Its lightweight, battery-powered design ensures comfort and usability for extended periods in the field.`
     ],
-    extraImg: [accountingImg, accountingImg] // Replace with actual images
+    extraImg: [rtpepsProject] // Replace with actual images
   },
   {
     title: 'Battery-Powered Wireless Sensor Network',
     description: `Designed a low-power wireless sensor network for non-invasive monitoring of water usage events in residential and commercial plumbing systems.`,
     tags: ['Wireless Sensor Network', 'Battery Optimization', 'IoT', 'Embedded Systems', 'Water Monitoring'],
-    imageUrl: accountingImg, // Replace with your actual image reference
+    imageUrl: waterpipeProject, // Replace with your actual image reference
     link: '', // Add GitHub, paper, or deployment link if available
     detailedDescription: [
       `This project involved the design and deployment of a battery-powered wireless sensor network (WSN) to detect and monitor water usage events in premise plumbing systems without modifying or cutting into the pipes. The goal was to provide a scalable, non-invasive solution for water conservation and infrastructure diagnostics.`,
@@ -238,31 +251,29 @@ export const projectsData = [
   
       `This WSN architecture enables building-wide deployment for real-time water usage monitoring and anomaly detection, such as identifying leaks or unusual consumption patterns. It provides actionable insights for conservation, maintenance planning, and smart home integration without requiring invasive plumbing modifications.`
     ],
-    extraImg: [accountingImg, accountingImg] // Replace with your actual setup images
+    extraImg: [waterpipeProject] // Replace with your actual setup images
   },
 
   {
     title: 'Non-Invasive Sensor for Waterflow Event Detection',
     description: `Developed a non-invasive calorimetric sensor to detect water flow events in residential and commercial plumbing systems, aiding in water usage monitoring and leak detection.`,
     tags: ['Sensor Design', 'Calorimetry', 'Waterflow Monitoring', 'Non-Invasive', 'IoT'],
-    imageUrl: accountingImg, // Replace with your actual image reference
+    imageUrl: calorimetricProject, // Replace with your actual image reference
     link: '', // Add GitHub or project page if available
     detailedDescription: [
-      `This project involved the design and implementation of a non-invasive calorimetric sensor to detect waterflow events in premise plumbing systems. The goal was to provide an efficient, cost-effective way to monitor water usage and detect leaks without requiring physical alterations to existing piping systems.`,
+      `This project involved the design and implementation of a non-invasive calorimetric sensor to detect waterflow events in premise plumbing systems. The goal was to provide an efficient, cost-effective way to monitor water usage and detect leaks without requiring physical alterations to existing piping systems. The calorimetric sensor works by measuring minute temperature changes in the water flow as it passes through the pipe. These temperature fluctuations are caused by the thermal properties of the water being altered `,
   
-      `The calorimetric sensor works by measuring minute temperature changes in the water flow as it passes through the pipe. These temperature fluctuations are caused by the thermal properties of the water being altered by the flow events, such as faucet usage or a toilet flush. The sensor is capable of accurately detecting these changes without direct contact with the water, making it completely non-invasive.`,
-  
-      `I utilized embedded systems and low-power electronics to process the temperature data in real time, differentiating between various water flow events. The system uses a combination of analog and digital sensors along with custom firmware to capture, process, and classify events based on the magnitude and duration of the temperature shifts.`,
+      `by the flow events, such as faucet usage or a toilet flush. The sensor is capable of accurately detecting these changes without direct contact with the water, making it completely non-invasive. I utilized embedded systems and low-power electronics to process the temperature data in real time, differentiating between various water flow events. The system uses a combination of analog and digital sensors along with custom firmware to capture, process, and classify events based on the magnitude and duration of the temperature shifts.`,
   
       `This non-invasive calorimetric sensor is ideal for integrating into smart home systems, enabling real-time monitoring of water usage, leak detection, and conservation efforts. Its wireless data transmission allows for seamless integration with cloud-based platforms, making it suitable for large-scale deployment in both residential and commercial buildings.`
     ],
-    extraImg: [accountingImg, accountingImg] // Replace with your actual images
+    extraImg: [calorimetricProject] // Replace with your actual images
   },
   {
     title: 'Implantable Sensor for Periprosthetic Joint Infection',
     description: `Developed an implantable sensor for the early detection of periprosthetic joint infections (PJI), utilizing passive wireless interrogation to monitor infection indicators without the need for battery-powered systems.`,
     tags: ['Implantable Sensors', 'Wireless Interrogation', 'Periprosthetic Joint Infection', 'Biomedical Engineering', 'Passive Sensors'],
-    imageUrl: accountingImg, // Replace with your actual image reference
+    imageUrl: pjiProject, // Replace with your actual image reference
     link: '', // Add project page or research link if available
     detailedDescription: [
       `This project involved the development of an implantable differential sensor designed to detect early signs of periprosthetic joint infection (PJI), a serious complication following joint replacement surgery. The sensor was designed to monitor biochemical or inflammatory markers indicative of infection within the joint, using passive wireless interrogation to transmit data externally without the need for batteries or wires inside the body.`,
@@ -273,64 +284,72 @@ export const projectsData = [
   
       `The implantable sensor provides a promising solution for early, real-time detection of PJI, enabling timely medical intervention and reducing the risk of long-term complications. Its passive wireless functionality, combined with its small form factor, makes it suitable for long-term deployment in clinical settings, offering a reliable tool for post-surgical care and infection prevention in patients with joint replacements.`
     ],
-    extraImg: [accountingImg, accountingImg] // Replace with your actual images
+    extraImg: [pjiProject] // Replace with your actual images
   },
   {
     title: 'Clean Room Fabrication of Silicon Pressure Sensors',
     description: `Fabrication of MEMS-based silicon pressure sensors using microfabrication techniques in a cleanroom environment, achieving high accuracy and repeatability through precise testing.`,
     tags: ['MEMS', 'Microfabrication', 'Cleanroom', 'Silicon Sensors', 'Pressure Sensing'],
-    imageUrl: accountingImg,
+    imageUrl: pressureSensorProject,
     link: '', // Optional: add portfolio or publication link
     detailedDescription: [
-      `This project involved the fabrication of MEMS-based pressure sensors on 2-inch n-type silicon wafers in a cleanroom environment. Using established microfabrication process flows, I achieved highly accurate pressure sensing by focusing on precise resistance and voltage testing.`,
+      `This project involved the fabrication of MEMS-based pressure sensors on 2-inch n-type silicon wafers in a cleanroom environment. Using established microfabrication process flows, I achieved highly accurate pressure sensing by focusing on precise resistance and voltage testing. The fabrication process included photolithography, etching, and deposition techniques to pattern the sensor components onto the silicon wafer. This was followed by the integration of electrical contacts and microstructures designed to detect pressure variations with high sensitivity.`,
      
-      `The fabrication process included photolithography, etching, and deposition techniques to pattern the sensor components onto the silicon wafer. This was followed by the integration of electrical contacts and microstructures designed to detect pressure variations with high sensitivity.`,
-     
-      `Through extensive testing, the sensors demonstrated 90% accuracy, with thorough resistance and voltage measurements taken at multiple stages of the fabrication process. These tests were critical for ensuring sensor performance and identifying areas for improvement.`,
-     
-      `I meticulously documented the fabrication steps and testing procedures to ensure repeatability of the process and to support iterative improvements in the sensor design. This data is invaluable for refining the sensor’s performance and ensuring reliability in future iterations.`,
+      `Through extensive testing, the sensors demonstrated 90% accuracy, with thorough resistance and voltage measurements taken at multiple stages of the fabrication process. These tests were critical for ensuring sensor performance and identifying areas for improvement. I meticulously documented the fabrication steps and testing procedures to ensure repeatability of the process and to support iterative improvements in the sensor design. This data is invaluable for refining the sensor’s performance and ensuring reliability in future iterations.`,
     ],
-    extraImg:[]
+    extraImg:[pressureSensorProject,pressureSensorProject1]
   },
+  {
+    title: 'Hardware Simulator for Automated Controller Board Testing',
+    description: `Built a hardware simulation platform using Beaglebone Black to automate the testing of embedded controller boards through programmable loads and signal generation.`,
+    tags: ['Beaglebone Black', 'Python', 'JavaScript', 'Digital Potentiometer', 'MOSFETs', 'Embedded Testing'],
+    imageUrl: hardwareSimulatorProject, // Replace with your actual image reference
+    link: '', // Add GitHub or documentation link if available
+    detailedDescription: [
+      `This project involved developing a hardware simulator that automates the testing of embedded controller boards. The goal was to replace manual test procedures with a programmable and repeatable test setup, improving reliability and reducing testing time. The simulator was built using the Beaglebone Black, which served as the central control unit. It interfaced with external components such as digital potentiometers and MOSFETs to emulate various input and load conditions. This allowed the system to dynamically adjust voltage levels, simulate faults, or apply programmable loads to the controller under test. Python scripts running on the Beaglebone handled test sequencing, signal manipulation, and data logging, while a JavaScript-based interface was developed to `,
+  
+      `control and monitor the test process through a web dashboard. This interface provided real-time feedback, control toggles, and result visualization for efficient debugging. This hardware simulator significantly streamlined the validation process for embedded controllers. It enabled comprehensive functional and stress testing across a range of input scenarios, enhancing product reliability and reducing manual effort.`
+    ],
+    extraImg: [hardwareSimulatorProject] // Replace with your actual images
+  },
+
   {
     title: 'Controlling Projector using Raspberry Pi',
     description: `Developed a custom Linux device driver to automate projector control based on HDMI connection status using Raspberry Pi.`,
     tags: ['Linux Device Driver', 'Raspberry Pi', 'Embedded Systems', 'HDMI', 'EDID', 'Mailbox Interface'],
-    imageUrl: accountingImg, // Replace with your actual image reference
+    imageUrl: deviceDriverProject, // Replace with your actual image reference
     link: '', // Add GitHub or project documentation link if available
     detailedDescription: [
-      `This project involved building a Linux device driver on Raspberry Pi to automatically control a projector based on HDMI cable connection status. The goal was to streamline projector usage in embedded setups by eliminating the need for manual on/off switching.`,
+      `This project involved building a Linux device driver on Raspberry Pi to automatically control a projector based on HDMI cable connection status. The goal was to streamline projector usage in embedded setups by `,
   
-      `The driver uses the Raspberry Pi’s mailbox interface to communicate directly with the VideoCore GPU, enabling retrieval of Extended Display Identification Data (EDID). By analyzing the EDID, the system can distinguish whether a projector or a standard monitor is connected.`,
+      `eliminating the need for manual on/off switching. The driver uses the Raspberry Pi’s mailbox interface to communicate directly with the VideoCore GPU, enabling retrieval of Extended Display Identification Data (EDID). By analyzing the EDID, the system can distinguish whether a projector or a standard monitor is connected.`,
   
       `Based on this information, the driver triggers an automatic response — powering on the projector when a connection is detected, and switching it off when disconnected. This improves energy efficiency and simplifies setup for smart AV environments.`,
   
       `The project demonstrates low-level hardware-software integration and effective use of Raspberry Pi interfaces for device automation in embedded systems, with potential applications in smart classrooms, conference rooms, or remote-controlled setups.`
     ],
-    extraImg: [accountingImg, accountingImg] // Replace with actual visuals
+    extraImg: [deviceDriverProject] // Replace with actual visuals
   },
   {
     title: 'Adding Real-Time Capabilities to Linux using RTAI',
     description: `Analyzed and enhanced the real-time performance of Linux using RTAI, comparing real-time tasks with standard user processes under varying system conditions.`,
     tags: ['RTAI', 'Linux Kernel', 'Real-Time Systems', 'LTTng', 'System Performance', 'Task Scheduling'],
-    imageUrl: accountingImg, // Replace with actual image reference
+    imageUrl: rtaiProject, // Replace with actual image reference
     link: '', // Add GitHub or technical report link if available
     detailedDescription: [
-      `This project focused on augmenting the Linux operating system with real-time capabilities using the Real-Time Application Interface (RTAI). The objective was to evaluate how real-time tasks behave under different system conditions and how they compare to standard Linux user processes.`,
-  
-      `To carry out this evaluation, I implemented a set of real-time tasks using RTAI and conducted a comparative analysis against normal user-space processes. Various system parameters were varied during testing — including task priority, system load, and scheduling strategies — to examine their impact on task execution latency and predictability.`,
+      `This project focused on augmenting the Linux operating system with real-time capabilities using the Real-Time Application Interface (RTAI). The objective was to evaluate how real-time tasks behave under different system conditions and how they compare to standard Linux user processes. To carry out this evaluation, I implemented a set of real-time tasks using RTAI and conducted a comparative analysis against normal user-space processes. Various system parameters were varied during testing — including task priority, system load, and scheduling strategies — to examine their impact on task execution latency and predictability.`,
   
       `Performance metrics and execution traces were collected using the LTTng (Linux Trace Toolkit next generation), which provided detailed insights into task scheduling, execution timing, and interrupt handling. The results highlighted the advantages of real-time scheduling in meeting deterministic deadlines, especially under high system load.`,
   
       `This project demonstrated a clear understanding of real-time kernel extensions, Linux internals, and system performance instrumentation. It is useful for applications in industrial control, robotics, and embedded systems where timing precision is critical.`
     ],
-    extraImg: [accountingImg, accountingImg] // Replace with your own visuals
+    extraImg: [rtaiProject] // Replace with your own visuals
   },
   {
     title: 'Vertebral Vest',
     description: `Designed a wearable motion-tracking vest to help doctors monitor and analyze spinal movement throughout treatment using embedded sensors and 3D visualization tools.`,
     tags: ['Wearable Tech', 'Intel Edison', 'MPU6050', 'Motion Tracking', 'Healthcare', 'Blender'],
-    imageUrl: accountingImg, // Replace with your actual image reference
+    imageUrl: vetebralVestProject, // Replace with your actual image reference
     link: '', // Add GitHub or project documentation link if available
     detailedDescription: [
       `The Vertebral Vest project focused on creating a wearable device that assists medical professionals in tracking spinal or torso movement during the rehabilitation or treatment of musculoskeletal conditions. The system helps monitor a patient’s recovery by continuously capturing and analyzing posture and movement over time.`,
@@ -341,13 +360,13 @@ export const projectsData = [
   
       `The Vertebral Vest provides a non-invasive, real-time monitoring solution that supports personalized care and enhances doctor-patient interaction. Its integration of embedded systems with motion analytics and visualization bridges the gap between medical diagnostics and wearable technology.`
     ],
-    extraImg: [accountingImg, accountingImg] // Replace with actual visuals
+    extraImg: [vetebralVestProject] // Replace with actual visuals
   },    
   {
     title: 'Virtual Bowling',
     description: `Created an interactive bowling game that captures real-world hand motion using sensor-equipped gloves to simulate a realistic bowling experience.`,
     tags: ['C#', 'XNA Framework', 'Motion Sensing', 'Game Development', 'Human-Computer Interaction'],
-    imageUrl: accountingImg, // Replace with your actual image reference
+    imageUrl: virtualBowlingProject, // Replace with your actual image reference
     link: '', // Add GitHub or demo video link if available
     detailedDescription: [
       `Virtual Bowling is a motion-controlled game designed to replicate the physical experience of bowling using sensor-equipped gloves. The project aimed to bridge the gap between physical movement and digital interaction, providing users with an immersive and realistic sports simulation.`,
@@ -358,13 +377,13 @@ export const projectsData = [
   
       `This project combined principles of human-computer interaction, real-time motion tracking, and game development to deliver a novel entertainment experience. It demonstrates how embedded sensors can be used to create engaging virtual environments that react naturally to user movements.`
     ],
-    extraImg: [accountingImg, accountingImg] // Replace with real visuals
+    extraImg: [virtualBowlingProject] // Replace with real visuals
   },
   {
     title: 'Clip-On Touchscreen Enabler',
     description: `Designed a low-cost prototype system that converts any flat surface into a touch-enabled interface using ultrasonic sensing and embedded processing.`,
     tags: ['Ultrasonic Sensors', 'MSP430', 'Touch Interface', 'Human-Computer Interaction', 'Embedded Systems'],
-    imageUrl: accountingImg, // Replace with your actual image reference
+    imageUrl: cliponProject, // Replace with your actual image reference
     link: '', // Add GitHub or documentation link if available
     detailedDescription: [
       `The Clip-On Touchscreen Enabler project focused on developing a cost-effective system that could transform any flat or ordinary surface into a touch-sensitive interface. The idea was to provide an accessible alternative to expensive touchscreen technologies, particularly for educational, interactive, or assistive applications.`,
@@ -375,41 +394,35 @@ export const projectsData = [
   
       `This innovative system demonstrated how simple hardware components and signal processing can be combined to build intuitive and interactive interfaces. Its portable and clip-on form factor makes it versatile for a range of surfaces and environments, paving the way for low-cost touch interaction in resource-limited settings.`
     ],
-    extraImg: [accountingImg, accountingImg] // Replace with actual images
+    extraImg: [cliponProject] // Replace with actual images
   },
   {
     title: 'Electronic Drum Kit',
     description: `Built a low-cost electronic drum kit using piezoelectric sensors and an AVR microcontroller, interfaced with FL Studio for real-time sound generation.`,
     tags: ['AVR Microcontroller', 'Piezoelectric Sensors', 'FL Studio', 'Embedded Systems', 'MIDI'],
-    imageUrl: accountingImg, // Replace with your actual image reference
+    imageUrl: drumsProject, // Replace with your actual image reference
     link: '', // Add GitHub, demo video, or technical documentation link if available
     detailedDescription: [
-      `The Electronic Drum Kit project involved creating a digital percussion instrument using piezoelectric sensors mounted on drum pads to detect strikes. These sensors generate voltage signals upon impact, allowing for the capture of timing and intensity of drum hits.`,
-  
-      `An AVR microcontroller was used to process the sensor signals. It performed analog-to-digital conversion, filtered the data to reduce noise, and interpreted the strike intensity to generate corresponding MIDI signals. These signals were then transmitted to a PC via serial or USB interface.`,
-  
-      `On the PC side, FL Studio—a digital audio workstation—was used to map the MIDI signals to various drum sounds, enabling a real-time drumming experience. The system supported multiple pads and could detect varying strike force to simulate dynamic drumming.`,
+      `The Electronic Drum Kit project involved creating a digital percussion instrument using piezoelectric sensors mounted on drum pads to detect strikes. These sensors generate voltage signals upon impact, allowing for the capture of timing and intensity of drum hits. An AVR microcontroller was used to process the sensor signals. It performed analog-to-digital conversion, filtered the data to reduce noise, and interpreted the strike intensity to generate corresponding MIDI signals. These signals were then transmitted to a PC via serial or USB interface. On the PC side, FL Studio—a digital audio workstation—was used to map the MIDI signals to various drum sounds, enabling a real-time drumming experience. The system supported multiple pads and could detect varying strike force to simulate dynamic drumming.`,
   
       `This project combined embedded system design with digital music production, offering a compact and affordable alternative to commercial electronic drum kits. It demonstrated how physical interaction can be captured and translated into expressive digital audio through smart sensor integration and real-time signal processing.`
     ],
-    extraImg: [accountingImg, accountingImg] // Replace with your own images
+    extraImg: [drumsProject] // Replace with your own images
   },
   {
     title: 'SAVI – Shopping Assistant for Visually Impaired',
     description: `Designed a wearable system to assist visually impaired individuals in shopping by enabling product description readout through a smartphone interface.`,
     tags: ['Wearable Tech', 'Assistive Technology', 'OCR', 'Embedded Systems', 'Bluetooth Communication'],
-    imageUrl: accountingImg, // Replace with your actual image reference
+    imageUrl: saviProject, // Replace with your actual image reference
     link: '', // Add GitHub, demo video, or documentation link if available
     detailedDescription: [
-      `SAVI (Shopping Assistant for Visually Impaired) is a wearable band developed to help visually impaired individuals navigate shopping environments independently. The goal was to provide an intuitive and reliable way for users to identify products and understand their descriptions without relying on external help.`,
+      `SAVI (Shopping Assistant for Visually Impaired) is a wearable band developed to help visually impaired individuals navigate shopping environments independently. The goal was to provide an intuitive and reliable way for users to identify products and understand their descriptions without relying on external help. The system works by scanning the product label using a smartphone camera. The wearable band is equipped with a button or gesture input that triggers the phone to capture the product image. Optical Character Recognition (OCR) is `,
   
-      `The system works by scanning the product label using a smartphone camera. The wearable band is equipped with a button or gesture input that triggers the phone to capture the product image. Optical Character Recognition (OCR) is then used to extract text from the label, such as brand, ingredients, or price.`,
-  
-      `This text is converted to speech and read aloud to the user through the phone’s speaker or connected earphones, offering real-time auditory feedback. The wearable communicates with the smartphone wirelessly, ensuring hands-free interaction throughout the shopping experience.`,
+      `then used to extract text from the label, such as brand, ingredients, or price. This text is converted to speech and read aloud to the user through the phone’s speaker or connected earphones, offering real-time auditory feedback. The wearable communicates with the smartphone wirelessly, ensuring hands-free interaction throughout the shopping experience.`,
   
       `SAVI showcases the potential of integrating embedded systems, OCR, and voice output to create impactful assistive technology. It promotes greater independence for visually impaired individuals and enhances their ability to make informed choices while shopping.`
     ],
-    extraImg: [accountingImg, accountingImg] // Replace with actual visuals
+    extraImg: [saviProject] // Replace with actual visuals
   }  
   
   

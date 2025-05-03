@@ -10,7 +10,7 @@ import Image, { StaticImageData } from 'next/image';
 
 const NewComponent = ({ detailedDescription, extraImages }: { readonly detailedDescription: readonly String[], readonly extraImages: readonly StaticImageData[] }) => {
   return (
-    <div className="mb-3 last:mb-0 sm:mb-8 relative max-w-[52rem] overflow-hidden rounded-lg border transition hover:bg-gray-200 dark:hover:bg-primary-foreground text-black">
+    <div className="mb-3 last:mb-0 sm:mb-8 relative max-w-[52rem] overflow-hidden rounded-lg border transition hover:bg-gray-200 dark:hover:bg-primary-foreground text-black dark:text-white">
       <div className="flex flex-col px-5 pb-7 pt-4 sm:pl-10 sm:pr-2 sm:pt-10">
         {detailedDescription.map((dsc, index) => (
           <div key={index} className={`flex flex-col sm:flex-row mb-4 ${index % 2 === 0 ? 'sm:flex-row-reverse' : ''}`}>
